@@ -1,0 +1,2023 @@
+
+
+
+
+
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">        
+    <title></title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@200&family=Raleway:wght@100&family=Ubuntu:wght@300&family=Varta:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,200&family=Montserrat:wght@200;300;400&family=Poppins:wght@900&family=Raleway:wght@100&family=Ubuntu:wght@300&family=Varta:wght@300&display=swap');
+      *{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    
+    
+      }
+    
+      body, html {
+  height: 100%;
+  background-color:black;
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+    
+    /*navbar style*/
+    
+    .dropdown:hover .dropdown-menu{
+     
+     display: block;
+     margin-top: 0;
+     border-radius: 10px;
+      }
+    
+    
+    .dropdown .dropdown-menu{
+    
+     display: none;
+     background-color:transparent;
+     border: none;
+    
+    }
+    
+    
+    .dropdown-menu li {
+    
+     color: white;
+    }
+    .sm-icons{
+    
+    flex-direction: row;
+    
+    
+    }
+    
+    .sm-icons .nav-link{
+    
+     padding-right: 2em;
+     
+    }
+    
+    .navbar{
+    
+    background-color:black;
+    z-index: 999;
+    
+    }
+    
+    .navbar  a{
+    
+     color: white;
+    
+     
+    }
+    .navbar  a:hover{
+    
+     color:darkred;
+    
+    }
+    
+    .nav-item  a{
+    
+    color: white;
+    
+    }  
+    
+    .nav-item  a:hover{
+    
+    color:darkred;
+    
+    }  
+
+    a{
+  text-decoration: none;
+  color:black;
+  list-style: none;
+}
+
+
+
+nav ul li a{
+
+list-style: none;
+
+
+}
+nav ul li a{
+padding: 1rem 0;
+margin: 0 3rem;
+position: relative;
+letter-spacing: 2px;
+
+}
+nav ul li a:last-child{
+  margin-right: 0;
+} 
+nav ul li a::before,
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: crimson;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 1s;
+}
+nav ul li a::before{
+  top: 0;
+  transform-origin:left;
+}
+nav ul li a::after{
+  bottom: 0;
+  transform-origin:right;
+}
+nav ul li a:hover:before,
+nav ul li a:hover::after{
+  transform: scaleX(1);
+}
+
+
+
+
+    /*carousel style*/
+   
+.parallax {
+  /* The image used */
+  background-image: url("para2.gif");
+
+  /* Full height */
+  height: 5%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-image {
+  /* The image used */
+  background-image: url("para1.jpg");
+
+  /* Full height */
+  height: 5%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    
+/* you tube video */
+
+.youtube .video-responsive{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.video-responsive iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+/*sbmbanner*/
+
+.spmbanner{
+
+background-color: #242424;
+background-image: url(spm.gif);
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+/*speed*/
+
+
+.textspeed{
+
+background:linear-gradient(90deg,#cc2b5e ,#753a88);
+font-family:'Josefin Sans', sans-serif;
+font-size: 500%;
+font-weight: 900;
+text-align: center;
+
+-webkit-background-clip:text ;
+-webkit-text-fill-color: transparent;
+
+
+
+
+}
+
+.card{
+
+border: none;
+border-radius: 15px;
+transition: 1s;
+
+}
+.card img{
+  
+  box-shadow: #242424;
+border-radius: 10px;
+}
+.card:hover {
+
+transform: scale(0.6);
+z-index: 3;
+
+
+}
+/* processor banner*/
+
+.processor-banner{
+
+background-image: url(processor.jpg);
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+
+
+
+
+}
+/*botton*/
+
+.button {
+  position: relative;
+  background:linear-gradient(90deg,#00dbde,#fc00ff);
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+ background:linear-gradient(90deg,#08403e,#401940);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+/* procesor box*/
+
+.processor .box1{
+  border:1px solid #fc00ff;
+  width:100%;
+  height: 100%;
+ padding: 20px; 
+ border-radius: 10px;
+}
+
+.processor .box1 h1{
+
+color: white;
+font-size: 18px;
+text-align: center;
+padding: 10px 30px;
+margin-top:20px ;
+
+
+}
+
+/*frame banner*/
+.frame-banner{
+
+  background-image: url(text2.jpg);
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+
+
+
+}
+
+
+/*image zooming sports*/
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 400px;
+  height: 400px;
+}
+   
+/* you tube video2 */
+
+.youtube .video-responsive2{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.video-responsive2 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.supportbox{
+
+  border-radius: 30px;
+  background:#545e87;
+ 
+  opacity: 0.6;
+  width:50%;
+  height: 100%;
+ padding: 30px; 
+ margin-left: 25%;
+ 
+}
+/* you tube video3 */
+
+.youtube .video-responsive3{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.video-responsive3 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+/* you tube video4 */
+
+.youtube .video-responsive4{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.video-responsive4 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.support2 .box2-1{
+
+  background: #1f1f1f;
+  border: 1px solid grey;
+  width:100%;
+  height: 100%;
+ padding: 20px; 
+ border-radius: 10px;
+ opacity: 0.6;
+
+}
+
+.parallax-img {
+  /* The image used */
+  background-image: url(camgg.jpg);
+
+ 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*footer*/
+
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color:#296968;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background:#296968;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color:#296968;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+  border-radius:50px;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background:#296968;
+    padding: 13px 20px;
+    border: 1px solid #296968;
+    top: 0;
+    border-radius:100px;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color:#296968;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color:#296968;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  border: none;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  color: white;
+  background:#24616B;
+}
+
+
+
+    </style>
+  
+  <script>
+    function magnify(imgID, zoom) {
+      var img, glass, w, h, bw;
+      img = document.getElementById(imgID);
+      /*create magnifier glass:*/
+      glass = document.createElement("DIV");
+      glass.setAttribute("class", "img-magnifier-glass");
+      /*insert magnifier glass:*/
+      img.parentElement.insertBefore(glass, img);
+      /*set background properties for the magnifier glass:*/
+      glass.style.backgroundImage = "url('" + img.src + "')";
+      glass.style.backgroundRepeat = "no-repeat";
+      glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+      bw = 3;
+      w = glass.offsetWidth / 2;
+      h = glass.offsetHeight / 2;
+      /*execute a function when someone moves the magnifier glass over the image:*/
+      glass.addEventListener("mousemove", moveMagnifier);
+      img.addEventListener("mousemove", moveMagnifier);
+      /*and also for touch screens:*/
+      glass.addEventListener("touchmove", moveMagnifier);
+      img.addEventListener("touchmove", moveMagnifier);
+      function moveMagnifier(e) {
+        var pos, x, y;
+        /*prevent any other actions that may occur when moving over the image*/
+        e.preventDefault();
+        /*get the cursor's x and y positions:*/
+        pos = getCursorPos(e);
+        x = pos.x;
+        y = pos.y;
+        /*prevent the magnifier glass from being positioned outside the image:*/
+        if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+        if (x < w / zoom) {x = w / zoom;}
+        if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+        if (y < h / zoom) {y = h / zoom;}
+        /*set the position of the magnifier glass:*/
+        glass.style.left = (x - w) + "px";
+        glass.style.top = (y - h) + "px";
+        /*display what the magnifier glass "sees":*/
+        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+      }
+      function getCursorPos(e) {
+        var a, x = 0, y = 0;
+        e = e || window.event;
+        /*get the x and y positions of the image:*/
+        a = img.getBoundingClientRect();
+        /*calculate the cursor's x and y coordinates, relative to the image:*/
+        x = e.pageX - a.left;
+        y = e.pageY - a.top;
+        /*consider any page scrolling:*/
+        x = x - window.pageXOffset;
+        y = y - window.pageYOffset;
+        return {x : x, y : y};
+      }
+    }
+    </script>
+    
+      </head>
+      <body>
+        
+    
+      
+        <div class="container-fluid">
+
+    <!---navbar-->
+    
+   
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid fixed">
+    <a class="navbar-brand" href="fujifilm page1.html"> <img src="Fujifilm.png"  alt="" style="width:100px; height:auto">   </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCT
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="camerapage5.html">Cameras</a></li>
+            <li><a class="dropdown-item" href="lensnavpage6.html">Lenses</a></li>
+            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+            
+            <li><a class="dropdown-item" href="#">Software</a></li>
+          </ul>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link " href="newsspage.html">NEWS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="eventspage.html">EVENTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="promption.html">PROMOTION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="shop.html">SHOP</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SUPPORT
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="dowmload.html">Download</a></li>
+            <li><a class="dropdown-item" href="#">Manual</a></li>
+            <li><a class="dropdown-item" href="#">Compatibility</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            X-PHOTOGRAPHER
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="gallery.html">Galleries</a></li>
+            <li><a class="dropdown-item" href="photographerpics.html">Photographer</a></li>
+           
+          </ul>
+        </li>
+        
+      </ul>
+      <ul class="navbar-nav sm-icons">
+
+        <li class="nav-link"><a href="signuppage.html"><i class="bi bi-box-arrow-in-right"></i></a></li>
+        <li class="nav-link"><a href="country.html"><i class="fa-solid fa-globe"></i></a></li>
+       
+   </ul>
+    </div>
+  </div>
+</nav>
+    <!-----carousel------->
+    
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="page1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="1000">
+                    <img src="page2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item"data-bs-interval="1000">
+                    <img src="page3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item"data-bs-interval="1000">
+                    <img src="page4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                
+              </div>
+    
+
+
+
+
+     
+
+
+
+<!---caption youtube---->
+
+
+<div class="row">
+<div class="col-sm-12">
+<div style="height:auto;background-color:black;color:white;font-size:20px;text-align: center;padding:5%;"><br><hr>
+<!--caption1-->
+<div class="col-sm-12 col-xs-12 md-sm-12">
+<p>Never miss a decisive moment.
+  Featuring a stunning 5th generation X-Trans CMOS 5 HS sensor and X-Processor 5 in a beautifully designed body, 
+  photographers and filmmakers alike can now create at the pace of life and the speed of their imaginations.</p><hr>
+  
+</div>
+<!--end-->
+<!---youtube1-->
+<div class="container">
+  <div class="row">
+  <div class="col-sm-12  md-xs-12  col-xs-12  youtube"  >
+   <div class="video-responsive" >
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xl_-a6PbT9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div> 
+  </div>
+  </div>
+<!--end-->
+</div></div></div>
+<!--end-->
+
+
+     <!--parallex--> 
+
+     <div class="parallax"></div>
+
+
+      <div class="parallax-image"></div>
+
+      
+     
+
+<!---end-->
+
+
+<!---speed power mobility-->
+
+
+<div class="row">
+  <div class="col-sm-12">
+
+ 
+<div class="spmbanner">
+
+
+<div class="container">
+  <br><br><br>  <br><br><br>  <br><br><br>  <br><br><br> 
+ <!---speed--->
+  <div class="row">
+    <div class="col-sm-12 speed"data-bs-interval="1000">
+      <img src="SPEEDTEXT.png" style="width:100% ;" alt="" >
+<br><br><br>
+        <div class="textspeed">Faster than for ever</div>
+
+      </div>
+   
+
+
+      
+
+</div>
+</div>
+             
+       
+
+
+
+<div class="container">
+
+  <div class="row">
+  <div class="col-sm-3">
+    <div class="card " style="width:100%;">
+ <a href="#speed1"><img src="speedbox.jpg"  alt="40" style="width:100% ;"></a> 
+
+  
+  </div>
+</div>
+  <div class="col-sm-3">
+    <div class="card " style="width:100%;">
+    <a href="#speed2"><img src="speedbox – 1.jpg" alt="heigh speed" style="width: 100%;"></a>
+    
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="card " style="width:100%;">
+    <a href="#speed3"><img src="speedbox – 2.jpg" alt="autofocus" style="width: 100%;"></a>
+    
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card " style="width:100%;">
+   <a href="#speed4"><img src="speedbox – 3.jpg" alt="subject-detection" style="width:100% ;"></a> 
+  
+    </div>
+  </div>
+
+
+  </div>
+ 
+</div>
+
+
+  <div class="container">
+    <br><br><br>  <br><br><br>  <br><br><br>  <br><br><br> 
+ 
+    <!---power-->
+
+    <div class="row">
+      <div class="col-sm-12 speed">
+       <img src="POVER TEXT.png" style="width:100% ;" alt="" >
+          <br><br><br>
+          <div class="textspeed">More powerfull than ever </div>
+  
+        </div>
+     
+  
+  
+        
+  
+  </div>
+  </div>
+    <br>             
+         
+  
+  
+  
+  <div class="container">
+  
+    <div class="row">
+    <div class="col-sm-3">
+      <div class="card " style="width:100%; ">
+        <a href="#power1"><img src="powerbox.jpg"  style="width:100%; " alt=""></a> 
+   </div>
+  </div>
+
+    <div class="col-sm-3">
+      <div class="card " style="width:100%;">
+        <a href="#power2"><img src="powerbox – 1.jpg" style="width:100%; " alt=""></a> 
+     
+       </div>
+    </div>
+    
+    <div class="col-sm-3">
+      <div class="card " style="width:100%;">
+        <a href="#power3"><img src="powerbox – 2.jpg" style="width:100%; " alt=""></a>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card" style="width:100%;">
+        <a href="#power4"><img src="powerbox – 3.jpg" style="width:100%; "alt=""></a>
+     </div>
+    </div>
+    
+    </div>
+
+    </div>
+
+
+
+    <div class="col-sm-6" style="color:white ;margin-left: 17%;">*Apple ProRes is a trademark of Apple Inc., registered in the U.S. and other countries and regions.</div>
+   
+
+<!---mobility-->
+
+    <div class="container">
+      <br><br><br>  <br><br><br>  <br><br><br>  <br><br><br> 
+ 
+      <div class="row">
+        <div class="col-sm-12 speed"data-bs-interval="1000">
+          <img src="MOBILITY TEXT.png" style="width:100% ;" alt="" >
+            <br><br><br>
+            <div class="textspeed">Lighter than ever </div>
+    
+          </div>
+       
+    
+    
+          
+    
+    </div>
+    </div>
+      <br><br><br>             
+           
+    
+    
+    
+    <div class="container">
+    
+      <div class="row">
+      <div class="col-sm-3">
+        <div class="card " style="width:100%;">
+          <a href="#mobility1"> <img src="mobilitybox.jpg" style="width:100%; " alt=""></a>
+    
+      
+      </div>
+    </div>
+      <div class="col-sm-3">
+        <div class="card " style="width:100%; ">
+          <a href="#mobility2"> <img src="mobilitybox – 1.jpg" style="width:100%; " alt=""></a>
+        
+        </div>
+      </div>
+      
+      <div class="col-sm-3">
+        <div class="card " style="width:100%;">
+          <a href="#mobility3"><img src="mobilitybox – 2.jpg"  style="width:100%; " alt=""></a>
+        
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card " style="width:100%; ">
+          <a href="#mobility4"><img src="mobilitybox – 3.jpg"style="width:100%; "  alt=""></a>
+      
+        </div>
+      </div>
+      </div>
+    </div>
+      <div class="col-sm-3" style="color:white ;margin-left:17% ;">*When coupled with the FUJINON XF35mmF1.4 R</div>
+ 
+      
+    <!---end-->
+<br>
+
+
+
+<!---sbm banner end-->
+<br>
+
+
+ 
+<!---processor-->
+<div class="row">
+<div class="col-sm-12">
+<div class="processor-banner">
+<br><br><br>
+
+<!---caption processor-->
+
+
+<h1 style="text-align:center ; color:white">5th generation sensor and processor</h1>
+
+<br><br>
+
+
+
+<div class="container">
+<div class="col-sm-12">
+<img src="trance.png"    style="width: 100%;"   alt="">
+</div>
+</div><br><br>
+
+
+
+
+
+
+<div class="container">
+  <div class="col-sm-12">
+  <img src="processorpic1.png"    style="width:25%; margin-left:35%;"   alt="">
+  </div>
+  </div><br><br>
+
+
+
+
+
+  <div class="container">
+    <div class="col-sm-12">
+    <h1 style="text-align:center ; color:white">26.1-megapixel stacked back-side illuminated sensor</h1>
+    <br><br>
+    <p style="color: white;">A brand new 26.1 megapixel imaging sensor combines our existing back-side illuminated technology with a stacked, 
+      layered structure that quadruples readout speeds for faster image processing capabilities.</p>
+    </div>
+    </div><br><br>
+
+
+
+
+    <div class="container">
+      <div class="col-sm-12">
+        <a href="xtrance CMOS.html"><button class="button">Learn More</button></a>
+      </div>
+      </div><br><br><br><br>
+
+
+
+
+
+
+      <div class="container">
+        <div class="col-sm-12">
+        <img src="processorpic2.png"    style="width:25%;box-shadow:10px #242424;margin-left:35%;"   alt="">
+        </div>
+        </div><br><br>
+
+
+
+
+        <div class="container">
+          <div class="col-sm-12">
+          <h1 style="text-align:center ; color:white">Two-times faster than X-Processor 4,
+            <br>which doubles the processing speed of the camera</h1>
+          </div>
+          </div><br><br>
+
+
+
+
+<div class="container">
+  <div class="processor">
+  <div class="row">
+    <div class="col-sm-3">
+<div class="box1">
+  <h1>All processor<br>Technology</h1>
+</div>
+</div>
+
+<div class="col-sm-3">
+  <div class="box1">
+    <h1> HEIF FORMATE</h1>
+  </div>
+  </div>
+
+  <div class="col-sm-3">
+    <div class="box1">
+      <h1>Apple groups <br>codes</h1>
+    </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="box1">
+        <h1>CFexpress<br>Type B card</h1>
+      </div>
+      </div>
+
+      <div class="col-sm-12" style="color:white ;;">*CFexpress™ is a trademark or registered trademark of the CompactFlash Association</div>
+
+      <br><br><br>
+
+
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+<!---end procesor-->
+
+
+<!---frame start-->
+
+<div class="row">
+<div class="col-sm-12">
+<div class="frame-banner">
+<br><br>
+
+<!--40.l pic-->
+
+<div id="speed1">
+
+
+<div class="container">
+   <div class="col-sm-12">
+      <img src="40.png"   style="width:25% ; margin-left: 35%;"   alt="40">
+      <div class="textspeed">frame per second</div>
+    </div>
+</div>
+
+<h1 style="text-align:center ; color:white">High-speed burst shooting at up to 40 frames-per-second</h1>
+ 
+  <br><br>
+
+
+
+
+<!--zooming image sports-->
+
+
+
+
+<div class="img-magnifier-container">
+  <div class="row">
+    <div class="col-sm-12">
+      <img id="myimage" src="309300.jpg" width="50%" height="auto" style="margin-left: 25%;">
+     </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+<br><br><br><br><br><br>
+
+
+
+
+
+<div class="container">
+  <div class="col-sm-12">
+  <p style="text-align:center ; color:white">X-Trans CMOS 5 HS is capable of blackout-free bursts of up to 40 frames-per-second. In burst mode, 
+    the sensor’s phase-detection pixels are controlled independently from the image display. This triples the number of possible calculations, 
+    which enables the ability to focus at incredibly high-speeds between individual frames with accuracy and precision.</p>
+
+  </div>
+</div>
+  
+
+
+
+
+
+
+  <br><br><br><br><br<br>
+
+<!---end zooming-->
+
+
+
+
+
+
+<!--frame image 2-->
+
+<div id="speed2">
+
+<div class="container">
+  <div class="row">
+
+
+    <div class="col-sm-4">
+       <h1 style="color:#004EC3; text-align:justify;font-family: 'Montserrat', sans-serif">High-speed burst shooting at up to 30fps for over 1000 images</h1><hr>
+        <p style="color: white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">Increased memory capacity dramatically extends the camera’s ability to record continuous frames in burst mode without stopping. Reach blackout free speeds of up to 40fps, make over 1000 frames continuously at 30fps in JPEG, or write RAW images at 20fps* when using electronic shutter on X-H2S.</p>
+        </div>
+
+
+
+<div class="col-sm-8">
+  <img src="frame1.jpg" alt="" style="width: 100%;">
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+<br><br><br><br><br><br>
+
+<!--end-->
+
+<!--frame3-->
+
+<div class="speed3">
+
+<div class="container">
+  <div class="row">
+   
+
+<div class="col-sm-8">
+  <img src="snowpic.jpg" alt="" style="width: 100%;">
+</div>
+
+
+<div class="col-sm-4">
+
+     <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif">Improved autofocus for better subject tracking in almost any of the lighting condition</h1><hr>
+      <p style="color: white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">An improved AF prediction algorithm alongside X-
+        Trans CMOS 5 HS and X-Processor 5 provides a major 
+        boost to subject tracking and autofocus accuracy on moving objects, 
+        most notably in Zone AF and low-contrast conditions.</p>
+
+      </div>
+
+
+
+
+  </div>
+</div>
+
+
+</div>
+
+
+<br><br><br><br><br><br>
+
+
+
+
+
+
+
+<!---youtube1-->
+
+<div id="speed4">
+
+<div class="container">
+  <div class="row">
+
+
+
+    <div class="col-sm-4">
+     
+          <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif">Subject-detection autofocus</h1><br>
+          <p style="color:white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">X-Processor 5 features subject-detection AF based on Deep Learning techology that automatically detects and tracks a broader range of subjects, including animals, birds, cars, motorcycles, bicycles, airplanes, and trains – as well as human faces and eyes, so image-makers can concentrate on composition and creativity, confident that X-H2S will track focus accurately.</p>
+          
+        
+       </div>
+
+
+
+    <div class="col-sm-8  youtube"  >
+      <div class="video-responsive2" >
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/b6urPBI7r6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+          </div>
+
+
+</div>
+  </div>
+
+</div>
+<!--end-->
+
+<br><br><br><br>
+<br><br>
+
+<!---focus images-->
+<div class="container">
+<div class="row">
+
+
+  <div class="col-sm-12">
+<img src="focusimg.png" alt=""  style="width:70% ;margin-left: 20%;">
+</div>
+
+
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br>
+<!---end-->
+<!--support box-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="supportbox">
+ <div class="text">
+        <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif">Support for HEIF image format</h1><br><br>
+        <p style="color: white; text-align:justify;font-family: 'Montserrat', sans-serif">The HEIF image format delivers 10-bit image quality in files up to 30% smaller than standard JPEG files, continuing to expand Fujifilm’s 
+          reputation of deliverying high-quality images straight out of camera.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br>
+
+
+<!----6.2k pic-->
+
+
+<div id="power1">
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="SUPPPORTBOX.png" style="width:60%; margin-left: 20%;" alt="60">
+    </div>
+  </div>
+</div>
+  
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--video3-->
+
+<div class="container">
+  <div class="row">
+
+
+
+    <div class="col-sm-4">
+    
+          <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif">open gate <br>6.2K/30p 4:2:2 <br>10bit</h1><br>
+          <p style="color: white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">Open Gate 6.2K movies can be recorded internally at 30P in 4:2:2 10-bit color.
+            X-H2S’s 26.1MP Stacked BSI CMOS sensor has an incredible readout speeds of up to 1/180 sec,* which tightly controls rolling shutter effects, resulting in more natural-looking motion when recording video.</p>
+          
+      
+       </div>
+
+
+
+    <div class="col-sm-8   youtube"  >
+      <div class="video-responsive3" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/F-8wK0UmiOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+         <div> 
+   
+
+</div>
+  </div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>  
+<br><br><br><br><br><br><br><br><br><br><br><br>  
+
+<!--end-->
+<!--video4-->
+
+
+<div class="container">
+  <div class="row">
+   
+
+        <div class="col-sm-4" >
+        
+            <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif"> lence4K/120P high speed video recording</h1><br>
+            <p style="color: white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">X-H2S also supports 4K/120P high-speed video. Now, fast-moving subjects can be recorded in incredible detail for high-quality, slow-motion footage.</p>
+            
+          </div>
+     
+
+        <div class="col-sm-8   youtube"  >
+          <div class="video-responsive4" >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gS1CEkg3NBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+             <div> 
+             
+
+  </div>
+</div>
+
+
+</div>
+
+<br><br><br><br><br><br><br>
+  
+
+<!-- frame image4-->
+
+
+<div id="power2">
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-4">
+
+      <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif">Up to the 240 minutes of continuous recording</h1><br>
+      <p style="color: white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">The camera features a new heat-dissipating structure, increasing the video recording time up to 240 minutes of 4K/60P video. *</p>
+      <p style="color: white; text-align:justify; font-size: 10px;font-family: 'Montserrat', sans-serif">*When recording video at 25℃ from a cool start, with the auto power-off temperature set at “High,” bitrate of 100Mbps, a vertical battery grip VG-XH attached and using three batteries. The recording duration depends on remaining battery charge and the type and capacity of a memory card used. When the main unit heats up, filming may automatically be terminated.</p>
+       </div>
+
+       <div class="col-sm-8">
+        <img src="recorder.jpg" alt="" style="width:100% ;">
+       </div>
+
+
+  </div>
+</div>
+
+<br><br><br><br><br><br><br>
+  
+
+
+
+<!---frameimage5-->
+
+<div class="container">
+  <div class="row">
+
+
+    <div class="col-sm-4">
+      <img src="113.jpg" alt="" style="width: 100%;">
+    </div>
+
+ <div class="col-sm-8">
+  <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif">Optional cooling fan accessory</h1><br>
+  <p style="color: white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">Attach the optional cooling fan (FAN-001) to X-H2S to extend video recording capabilities in high temperatures.</p>
+ </div>
+
+
+
+  </div>
+</div>
+
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<!--support box2-->
+
+<div id="power3">
+
+<div class="container">
+  <div class="support2">
+<div class="row">
+
+
+<div class="col-sm-6">
+  <div class="box2-1">
+  <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif">Apple ProRes support</h1><br><br>
+  <p style="color: white; text-align:justify;font-family: 'Montserrat', sans-serif">X-H2S supports Apple ProRes 422 HQ, ProRes 422, and ProRes 422 LT. ProRes 422 Proxy is also avaialble when recording ProRes, which can assist in streamlining post-production workflows.</p>
+
+</div>
+</div>
+
+
+  <div class="col-sm-6">
+    <div class="box2-1">
+    <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif">Enhanced AF for video</h1><br><br>
+    <p style="color: white; text-align:justify;font-family: 'Montserrat', sans-serif">X-H2S supports the AF+MF function when recording movies and offers subject-detection AF during video recording for accurate tracking of fast-moving subjects.</p>
+  
+  </div>
+  </div>
+
+
+
+</div>
+</div>
+</div>
+<!--end-->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!--video3-->
+<div class="container">
+  <div class="row">
+
+
+
+    <div class="col-sm-4">
+     
+          <h1 style="color:#004EC3; text-align:center;font-family: 'Montserrat', sans-serif">New F-Log2</h1><br>
+          <p style="color: white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">In addition to F-Log, X-H2S also supports F-Log2, which records an expanded dynamic range of 14+ stops.* This range is wider than current F-Log and broadens post-production potential.</p>
+          <p style="color: white; text-align:justify; font-size: 10px;font-family: 'Montserrat', sans-serif">*When recording F-Log2, according to Fujifilm internal testing.</p>
+          
+        
+       </div>
+
+
+
+    <div class="col-sm-8   youtube"  >
+      <div class="video-responsive3" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uyfOlMasj5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+         <div> 
+   
+
+</div>
+</div>
+  
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+<!--work follow-->
+
+<div id="power4">
+
+
+<h1 style="color:#004EC3; text-align:center;font-family: 'Fira Sans', sans-serif;font-size:40px ;">WORKFLOW</h1><br><br><br><br>
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-6">
+<img src="work1.5.jpg" alt="" style="width:100% ;"><br><br>
+<h1 style="color:white; text-align:justify;font-family: 'Fira Sans', sans-serif;">RAW output via HDMI</h1><br>
+<p style="color: white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">When combined with an ATOMOS HDMI device, the RAW video output from the X-H2S can be recorded as 12-bit Apple ProRes RAW at frame sizes up to 6.2K and frame rates up to 29.97fps. And when combined with Blackmagic Design Video Assist 12Gs, the RAW video output from the camera can be recorded as Blackmagic RAW at frame sizes up to 6.2K and frame rates up to 29.97fps.</p>
+ </div>
+
+
+
+ <div class="col-sm-6">
+  <img src="work2.5.jpg" alt="" style="width:100% ;"><br><br>
+
+  <h1 style="color:white; text-align:justify;font-family: 'Fira Sans', sans-serif;">Remote Rec function</h1><br>
+<p style="color: white; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">Add the optional File Transmitter FT-XH* to support the Remote Rec function by wired LAN/wireless LAN. This new feature enables up to four X-H2S cameras to be simulatenously controlled from a browser.</p>
+<p style="color: white; text-align:justify; font-size: 10px;font-family: 'Montserrat', sans-serif">*due to be released in Sep 2022</p>
+    </div>
+
+
+</div>
+</div>
+
+</div>
+
+<!--end-->
+</div>
+</div>
+</div>
+
+<!--end-->
+
+</div>
+  </div>
+  </div>
+
+
+  <br><br><br><br><br><br><br><br><br><br>
+ 
+
+<!----ibis-->
+
+<div id="mobility1">
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <img src="processor – 1.jpg" alt="" style="width:100% ;">
+
+    
+  </div>
+</div>
+
+</div>
+<!--cam video-->
+
+<div class="parallax-img">
+
+
+<!--camvideo-->
+  
+    <div class="row">
+      <div class="col-sm-12"><img src="tuttu.gif" alt="" width="100%"></div>
+    </div>
+  <br><br><br>
+<!--end-->
+
+<!--caption1-->
+
+
+
+<div class="container">
+<div class="col-sm-12" style="width:100% ; height:auto">
+<p style="color: black; text-align:justify;font-family: 'Fira Sans', sans-serif; font-size:20px ;">An all-new 5-axis in-body image stabilization system, made possible by X-Processor 5 and a sensing control function, provides up to seven stops of compensation. This powerful feature gives users the freedom to handhold in conditions that previously would have required support, such as sports or low light.</p>
+</div>
+</div>
+<!--end-->
+<br><br><br><br><br><br>
+<!--first image captions-->
+<div id="mobility2">
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-4">
+
+      <h1 style="color:#004EC3; text-align:justify;font-family: 'Montserrat', sans-serif">5.76 million dot high-resolution electronic viewfinder</h1><br>
+      <p style="color:black; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">The high-resolution electronic viewfinder has a 0.8x magnification and uses 5.76 million dots for incredible detail. A refresh rate of approx. 120fps supresses image blur and distortion typically caused by looking through the finder at extreme angles, making it easier to track moving subjects more accurately.</p>
+     
+       </div>
+
+       <div class="col-sm-8">
+        <img src="match.jpg" alt="" style="width:100% ;">
+       </div>
+
+
+  </div>
+</div>
+
+</div>
+<!--end-->
+<br><br><br><br><br><br><br>
+<!---caption heading-->
+
+<div id="mobility3">
+
+
+<div class="container">
+  <div class="col-sm-4" style="width:100% ; height:auto">
+  <h1 style="color: black; text-align:justify;font-family: 'Fira Sans', sans-serif; font-size:50px ;">Tough, weather-resistant body for use in all conditions</h1>
+  <p style="color:black; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">With 79 weather-sealed points offering high levels of dust and moisture resistance, X-H2S is built to withstand the rigors of daily professional use and operate as normal in temperatures as low as -10°C (14°F).</p>
+  </div>
+  </div>
+  <br><br><br><br><br>
+
+
+  <div class="col-sm-8">
+    <img src="cam.ss.png" alt="" style="width:100%;">
+  </div>
+
+
+<!---end-->
+<br><br><br><br><br>
+<!--second imge caption-->
+
+
+
+<div class="container">
+  <div class="row">
+
+
+    <div class="col-sm-4">
+      <img src="camerapara.gif" alt="" style="width: 100%;">
+    </div>
+
+ <div class="col-sm-8">
+  <h1 style="color:#004EC3; text-align:justify;font-family: 'Montserrat', sans-serif">Shutter durability</h1><br>
+  <p style="color:black; text-align:justify; font-size: 20px;font-family: 'Montserrat', sans-serif">Shutter durability has been further improved, withstanding 500,000 actuations in the internal testing.</p>
+ </div>
+
+
+
+  </div>
+</div>
+
+</div>
+<!--end-->
+<br><br><br><br><br>
+<!--advanced operation-->
+
+<div id="mobility4"></div>
+<div class="container">
+  <div class="col-sm-12" style="width:100% ;" >
+  <h1 style="color: black; text-align:justify;font-family: 'Fira Sans', sans-serif; font-size:50px ;margin-left:20%;">Advanced operation and controls</h1>
+  </div>
+  </div>
+
+<!--end-->
+<br><br><br><br><br>
+<!--advanced img box1-->
+
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-6">
+<div class="cardbox" style="width:100%;">
+  <img src="update.jpg" class="card-img-top" style="width:100% ;" alt="...">
+  <div class="card-body">
+    <h1>Updated handgrip</h1>
+    <p class="card-text" style="font-size:20px ;">X-H2S improves on X-H1’s beloved handgrip to provide a more assured feel. This is especially useful when using longer or large-aperture lenses.</p>
+  </div>
+</div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="cardbox" style="width:100%">
+        <img src="touch.jpg" class="card-img-top" style="width:100% ;" alt="...">
+        <div class="card-body">
+          <h1>Feather-touch shutter release</h1>
+          <p class="card-text" style="font-size:20px ;">The shutter button’s feel has been adjusted to make it more intuitive when half-pressed, helping users release the shutter at precisely the right moment.</p>
+        </div>
+      </div>
+          </div>
+
+
+          <div class="col-sm-6">
+            <div class="cardbox" style="width:100%">
+              <img src="type bcard.jpg" class="card-img-top" style="width:100% ;" alt="...">
+              <div class="card-body">
+                <h1>Supports CFexpress™ Type B card</h1>
+                <p class="card-text" style="font-size:20px ;">X-H2S has one CFexpress™ Type B memory card slot and one UHS-II SD memory card slot. Draw out the full potential of X-H2S’s incredibly fast burst mode and its professional video performance with CFexpress™ Type B cards.</p>
+              </div>
+            </div>
+                </div>
+      
+
+                <div class="col-sm-6">
+                  <div class="cardbox" style="width:100%">
+                    <img src="video function.jpg" class="card-img-top" style="width:100% ;" alt="...">
+                    <div class="card-body">
+                      <h1>Enhanced video functions</h1>
+                      <p class="card-text" style="font-size:20px ;">Video operation has been made easier, thanks to the stand-alone video-recording button and 1.62 million dot vari-angle LCD monitor, which can be fully rotated – even when HDMI and microphone cables are plugged in. A full-sized HDMI Type A port is also provided for the first time on an X Series camera.</p>
+                    </div>
+                  </div>
+                      </div>
+            
+
+                      <div class="col-sm-6">
+                        <div class="cardbox" style="width:100%">
+                          <img src="grip.jpg" class="card-img-top" style="width:100% ;" alt="...">
+                          <div class="card-body">
+                            <h1>Increased connectivity
+                            </h1>
+                            <p class="card-text" style="font-size:20px ;">X-H2S can be connected directly to a PC for webcam and livestreaming use in 4K, without requiring the FUJIFILM X Webcam software. It can also be combined with the optional File Transmitter FT-XH to support FTP transfer and tethering capabilities through wired and wireless internet connections, or USB-connected smartphones</p>
+                          </div>
+                        </div>
+                            </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+<!--end-->
+
+<br><br><br>
+<!--model pdf-->
+<div class="container">
+ 
+  <div class="row">
+  <div class="col-sm-12">
+   <table class="table table-hover">
+    
+     <tbody><hr>
+       <tr>
+         <td><b>Model name</b></td>
+         <td>	FUJIFILM X-H2S</td>
+       </tr>
+       <tr>
+         <td><b>Declaration of conformity</b></td>
+         <td> <a href="https://dl.fujifilm-x.com/global/products/cameras/x-h2s/pdf/x-h2s_doc-nkt.pdf?_ga=2.43047141.1917665525.1655445246-373692711.1652705418">view pdf</a>        </td>
+       
+       </tr>
+     
+     </tbody>
+   </table>
+ </div>
+ 
+ </div>
+ </div>
+
+
+<!--end-->
+
+
+
+<br><br><br><br><br><br></br>
+<!-- Footer -->
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="cta-text">
+              <h4>Find us</h4>
+              <span>1010 Avenue, sw 54321, chandigarh</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-phone"></i>
+            <div class="cta-text">
+              <h4>Call us</h4>
+              <span>9876543210 0</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="far fa-envelope-open"></i>
+            <div class="cta-text">
+              <h4>Mail us</h4>
+              <span>mail@info.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a href="index.html"><img src="Fujifilm.png" class="img-fluid" alt="logo"></a>
+            </div>
+           
+            <div class="footer-social-icon">
+              <span>Follow us</span>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></i></a>
+              <a href="#"><i class="bi bi-google"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Useful Links</h3>
+            </div>
+            <ul>
+              <li><a href="fujifilm page1.html">HOME</a></li>
+              <li><a href="camerapage5.html">PRODUCT</a></li>
+              <li><a href="dowmload.html">SUPPORT</a></li>
+              <li><a href="gallery.html">X-PHOTOGRAPHER</a></li>
+              <li><a href="eventspage.html">EVENTS</a></li>
+              <li><a href="newsspage.html">NEWS</a></li>
+              <li><a href="promption.html">PROMOTIONS</a></li>
+              <li><a href="shop.html">SHOP</a></li>
+              <li><a href="#">CONTACT US</a></li>
+             
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Subscribe</h3>
+            </div>
+            <div class="footer-text mb-25">
+              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+            </div>
+            <div class="subscribe-form">
+              <form action="#">
+                <input type="email" placeholder="Email Address">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-to-top"><i class="bi bi-chevron-up"></i></button>
+
+
+
+
+
+
+<!--parallax-img-->
+</div>
+
+<!----end container-fluid---->
+</div>
+
+
+
+
+<script>
+
+
+  const scrollBtn = document.querySelector(".scroll-to-top");
+  
+  const refreshButtonVisibility = () => {
+    if (document.documentElement.scrollTop <= 150) {
+      scrollBtn.style.display = "none";
+    } else {
+      scrollBtn.style.display = "block";
+    }
+  };
+  refreshButtonVisibility();
+  
+  scrollBtn.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+  
+  document.addEventListener("scroll", (e) => {
+    refreshButtonVisibility();
+  });
+  
+  
+  
+  
+  </script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+    
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        -->
+
+
+      </script>
+    
+      <script>
+        /* Initiate Magnify Function
+        with the id of the image, and the strength of the magnifier glass:*/
+        magnify("myimage", 3);
+        </script>
+
+      </body>
+    </html>
+     

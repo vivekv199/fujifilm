@@ -1,0 +1,1738 @@
+
+
+
+
+
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+
+
+
+
+      <!--java-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" />
+      <!--owl-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous" />
+
+
+
+
+
+
+
+
+        <!-- Link Swiper's CSS -->
+        <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>   
+    <title>page1</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@200&family=Raleway:wght@100&family=Ubuntu:wght@300&family=Varta:wght@300&display=swap');
+    
+    
+      *{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+    
+      }
+      body{
+    
+    background-color: #242524;
+    
+      }
+    
+    
+    /*navbar style*/
+    
+    .dropdown:hover .dropdown-menu{
+     
+     display: block;
+     margin-top: 0;
+     border-radius: 10px;
+      }
+    
+    
+    .dropdown .dropdown-menu{
+    
+     display: none;
+     background-color:transparent;
+     border: none;
+    
+    }
+    
+    
+    .dropdown-menu li {
+    
+     color: white;
+  background-color: none;
+    }
+    .sm-icons{
+    
+    flex-direction: row;
+    
+    
+    }
+    
+    .sm-icons .nav-link{
+    
+     padding-right: 2em;
+     
+    }
+    
+    .navbar{
+    
+    background-color:black;
+    z-index: 999;
+    
+    }
+    
+    .navbar  a{
+    
+     color: white;
+    
+     
+    }
+    .navbar  a:hover{
+    
+     color:darkred;
+    
+    }
+    
+    .nav-item  a{
+    
+    color: white;
+    
+    }  
+    
+    .nav-item  a:hover{
+    
+    color:darkred;
+    
+    }  
+    
+    
+    .banner1{
+      
+        
+      width: 100%;
+     height: auto;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      box-sizing: border-box;
+      
+    }
+    
+    
+    /* zooming image 1*/
+    
+    .inner{
+      overflow: hidden;
+    }
+    
+    .inner img{
+    
+    transform: all 1.5s ;
+    
+    }
+    
+    .inner:hover img{
+    
+      transform: scale(1.5);
+    }
+    .card{
+      border: none;
+    }
+    
+    .button {
+      border:1px solid white;
+      background-color:transparent;
+      border-radius:4px ;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .button:hover{
+    
+    
+    color: black;
+    background-color: #FFFFFF;
+    
+    
+    }
+    
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button span:after {
+    
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button:hover span {
+      padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    
+    .gif-1{
+    
+      width: 100%;
+     height: auto;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      box-sizing: border-box;
+    
+    }
+    
+    
+    
+    a{
+  text-decoration: none;
+  color:black;
+  list-style: none;
+}
+
+
+
+nav ul li a{
+
+list-style: none;
+
+
+}
+nav ul li a{
+padding: 1rem 0;
+margin: 0 3rem;
+position: relative;
+letter-spacing: 2px;
+
+}
+nav ul li a:last-child{
+  margin-right: 0;
+} 
+nav ul li a::before,
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: crimson;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 1s;
+}
+nav ul li a::before{
+  top: 0;
+  transform-origin:left;
+}
+nav ul li a::after{
+  bottom: 0;
+  transform-origin:right;
+}
+nav ul li a:hover:before,
+nav ul li a:hover::after{
+  transform: scaleX(1);
+}
+
+.bg1{
+
+  
+
+  /* The image used */
+  background-image: url('100v\ –\ 8.jpg');
+
+  /* Full height */
+height: 10%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+/* Green */
+.success {
+  border-color: #04AA6D;
+  color:#296968;
+  border: 5px solid white;
+}
+
+.success:hover {
+  background-color:#296968;
+  color: white;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:transparent;
+  padding-top: 50px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color:#242424;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border-radius:50px ;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color:white;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color:gray;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+/* you tube video */
+
+.youtube .video-responsive{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.video-responsive iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+
+.bg2{
+
+  
+
+/* The image used */
+background-image: url('100v\ –\ 9.jpg');
+
+/* Full height */
+height:100%;
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+.youtube .video-responsive1{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.video-responsive1 iframe{
+left:0;
+top:0;
+
+width:100%;
+height: 100%;
+position:absolute;
+}
+
+
+
+.bg3{
+
+  
+
+/* The image used */
+background-image: url('100v\ –\ 11.jpg');
+
+/* Full height */
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.src1{
+animation-name: motion;
+animation-duration: 3s;
+animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes motion{
+  from{transform:translate(-200px)}
+  to{transform:translate(10px)}
+}
+ 
+.bg4{
+
+  
+
+/* The image used */
+background-image: url('100v\ –\ 13.jpg');
+
+/* Full height */
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+ 
+.bg5{
+
+  
+
+/* The image used */
+background-image: url('100v\ –\ 17.jpg');
+
+/* Full height */
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.bg6{
+
+  
+
+/* The image used */
+background-image: url('100v\ –\ 20.jpg');
+
+/* Full height */
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.bg7{
+
+  
+
+/* The image used */
+background-image: url('100v\ –\ 27.jpg');
+
+/* Full height */
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+.bg8{
+
+  
+
+/* The image used */
+background-image: url('100v\ –\ 29.jpg');
+
+/* Full height */
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+.card2{
+
+border: none;
+
+transition: 1s;
+border-radius: 1000px;
+margin-left: 70px;
+}
+.card2 img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 1000px;
+}
+.card2:hover {
+
+transform: scale(0.6);
+z-index: 3;
+
+
+}
+
+
+
+
+
+
+/*footer*/
+
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color:#296968;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background:#296968;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color:#296968;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+  border-radius:50px;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background:#296968;
+    padding: 13px 20px;
+    border: 1px solid #296968;
+    top: 0;
+    border-radius:100px;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color:#296968;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color:#296968;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  border: none;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  color: white;
+  background:#24616B;
+}
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+    
+      </head>
+      <body>
+        
+    
+        <div class="container-fluid">
+    
+    <!---navbar-->
+    
+   
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid fixed">
+    <a class="navbar-brand" href="fujifilm page1.html"> <img src="Fujifilm.png"  alt="" style="width:100px; height:auto">   </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCT
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="camerapage5.html">Cameras</a></li>
+            <li><a class="dropdown-item" href="lensnavpage6.html">Lenses</a></li>
+            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+            
+            <li><a class="dropdown-item" href="#">Software</a></li>
+          </ul>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link " href="newsspage.html">NEWS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="eventspage.html">EVENTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="promption.html">PROMOTION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="shop.html">SHOP</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SUPPORT
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="dowmload.html">Download</a></li>
+            <li><a class="dropdown-item" href="#">Manual</a></li>
+            <li><a class="dropdown-item" href="#">Compatibility</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            X-PHOTOGRAPHER
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="gallery.html">Galleries</a></li>
+            <li><a class="dropdown-item" href="photographerpics.html">Photographer</a></li>
+           
+          </ul>
+        </li>
+        
+      </ul>
+      <ul class="navbar-nav sm-icons">
+
+        <li class="nav-link"><a href="signuppage.html"><i class="bi bi-box-arrow-in-right"></i></a></li>
+        <li class="nav-link"><a href="country.html"><i class="fa-solid fa-globe"></i></a></li>
+       
+   </ul>
+    </div>
+  </div>
+</nav>
+    <!---end-->
+
+
+     <!-----carousel------->
+    
+     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"data-bs-interval="1000">
+            <img src="100v – 1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item"data-bs-interval="1000">
+            <img src="100v – 2.jpg" class="d-block w-100" alt="...">
+          </div>
+       
+          <div class="carousel-item"data-bs-interval="1000">
+            <img src="100v – 3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item"data-bs-interval="1000">
+            <img src="100v – 4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item"data-bs-interval="1000">
+            <img src="100v – 5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item"data-bs-interval="1000">
+            <img src="100v – 6.jpg" class="d-block w-100" alt="...">
+          </div>
+
+
+        </div>
+        
+      </div>
+
+
+
+<div class="bg1">
+  
+  
+  <br><br><br><br><br><br><br><br><br><br> 
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <div class="container">
+
+    <div class="col-sm-12">
+
+      <button     onclick="document.getElementById('id01').style.display='block'"   class="btn success" style="margin-bottom: 5%;margin-left:50% ;padding: 20px 30px;border:2px solid white;color: white;"><b>Success</b></button>
+
+    </div>
+  </div>
+  
+
+
+
+  <div id="id01" class="modal">
+
+    <div class="container">
+      <div class="modal-content animate">
+      <div class="row">
+      <div class="col-sm-12  md-xs-12  col-xs-12  youtube"  >
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+       <div class="video-responsive" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/i0kKeJ1xrV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div> 
+          </div>
+      </div>
+      </div>
+
+
+  </div>
+
+  
+    
+    
+    
+    
+      </div>
+    
+    
+</div>
+<!---end-->
+
+
+
+
+  <div class="bg2">
+<br><br><br>
+<div class="container">
+  <div class="col-sm-12">
+    <p style="color: white; text-align: center;">See. Frame. Create.
+      Simple actions that lead to making everyday moments remarkable.
+      Rediscover photography in a new and exciting way with</p>
+      <h1 style="color: white;text-align: center;" class="head">The One and Only, X100<span style="color:red;">V</span></h1>
+  </div>
+</div>
+  
+<br><br><br>
+<!---youtube1-->
+<div class="container">
+  <div class="row">
+  <div class="col-sm-12  md-xs-12  col-xs-12  youtube"  >
+   <div class="video-responsive1" >
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WYQytq1lkQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div> 
+  </div>
+  </div></div></div>
+  
+<!--end-->
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-8"><br><br><br><br><br><br><br><br><br><br>
+      <img src="png100v.png"  style="width: 100%;"  alt="" class="src">
+    </div>
+<div class="col-sm-4"><br><br><br><br><br><br><br>
+  <h1 style="color: white;"><span style="color: red;">Elegant</span>Design</h1>
+  <p style="color: white; text-align:justify;">The X100V’s timeless body has top and bottom plates milled from single pieces of aluminum, which results in a refined and classic camera body with clean, attractive edges. Finished with a beautiful satin coating, the X100V is a perfect combination of design and engineering that is sure to make photographers of any level joyful as they make their images</p>
+<img src="subpng.gif" width="100%" alt="" class="src1">
+
+</div>
+
+
+</div>
+</div>
+  </div>
+
+<!--scroll-->
+
+  <div class="bg3"><br><br><br><br><br><br>
+<div class="container">
+
+    <div class="col-sm-8">
+      <h1 style="color: white;"><span style="color: red;">A new lens</span>to get the most <br>out of any image</h1>
+      <p style="color: white; text-align:justify;">X100V features a new 23mmF2.0 lens to ensure that every detail from its X-Trans CMOS 4 Sensor is resolved beautifully. The lens has been enhanced for better resolution, lower distortion and improved close focus performance. However, it still maintains the same overall size and compatibility with legacy WCL/TCL lens attachments, which gives image-makers additional angle of views equivalent to 28mm and 50mm on 35mm Format.</p>
+
+      <img src="newlens1.gif" width="100%" alt="" class="src1">
+      <h1 style="color: white;"><span style="color: red;">Protected </span>from the <br>elements</h1>
+      <p style="color: white; text-align:justify;">Weather resistance appears for the first time in the X100 Series when the optional AR-X100 adapter ring and the PRF-49 protection filter are used in conjunction with the X100V’s brand new lens. Continue making images in challenging weather conditions and have peace of mind when nature takes an unexpected turn.</p>
+      <img src="100v – 12.jpg" width="100%" alt="" class="src">
+
+      <h1 style="color: white;"><span style="color: red;">Classic and intuitive</span><br>controls</h1>
+      <p style="color: white; text-align:justify;">The analog inspired controls of the X100 Series are one of its most defining characteristics. The use of dials for exposure compensation and shutter speed provide a purely tactile experience and contribute considerably to making the image making process an immersive and enjoyable experience.</p>
+
+      <img src="newlence2.gif" width="100%" alt="" class="src1">
+
+      <br><br><br><br>
+    </div>
+   
+ 
+</div>
+
+  </div>
+
+<!--end-->
+
+
+
+<!--scroll2-->
+
+<div class="bg4"><br><br><br><br><br><br>
+  <div class="container">
+  
+      <div class="col-sm-8">
+        <h1 style="color: white;"><span style="color: red;">See the world </span> differently</h1>
+        <p style="color: white; text-align:justify;">X100V has a vastly improved hybrid viewfinder which enables image-makers to quickly and easily choose between the 0.52x magnification optical viewfinder (OVF) or the 3.69M dot OLED electronic viewfinder. Offering 95% frame coverage, the OVF provides parallax-correcting frame lines to give an uninterrupted view of the world as it is, while the camera’s EVF delivers a real-time representation of the image as it is being made.<br><br>The EVF uses an extremely bright 1500cd/㎡ high-luminance panel, so images can be made easily even in bright conditions. Highlight and shadow details are more visible thanks to the EVFs higher resolution display, ensuring that images are made exactly as they are seen.</p>
+  
+        <img src="100-05.gif" width="100%" alt="" class="src1">
+        <h1 style="color: white;"><span style="color: red;">A blending of</span><br>cA blending of</h1>
+        <p style="color: white; text-align:justify;">The two-way tilting LCD touchscreen hides in the back of the camera and adds another first for the X100 series as it provides intuitive touch controls, unlocking even more possibilities for image-makers to see, frame, and create.</p>
+        <img src="100-06.gif" width="100%" alt="" class="src1"> <br><br><br><br><br><br><br><br><br> 
+  
+      
+  
+  
+      </div>
+     
+   
+  </div>
+  
+    </div>
+  
+
+<!--end-->
+
+
+
+<div class="banner2">
+  <div class="col-sm-12">
+  <img src="100v – 14.jpg" style="width:100% ;" alt="" class="src">
+</div>
+</div>
+
+
+
+<div class="banner3">
+  <div class="col-sm-12">
+  <img src="100v – 15.jpg"  style="width:100% ;" alt="" class="src">
+</div>
+</div>
+
+
+
+
+  </div>
+
+<!--end-->
+
+
+
+
+<div class="bg5">
+  <div class="container">
+    <div class="col-sm-12"><br><br><br>
+  <h1 style="color: white;text-align: center;"><span style="color: red;">When moments </span>matter most</h1><br><br><br>
+</div>
+
+<div class="row">
+<div class="col-sm-8">
+  <img src="100v – 16.jpg" style="width: 50%;margin-left: 50%;" alt="" class="src">
+  </div>
+
+  <div class="col-sm-4" style="margin-top:150px ;">
+    <h1 style="color: white;text-align: center;">Great low-light performance</h1>
+    <p style="color: white; text-align:justify;">The quad-core X-Processor 4 is the X100V's powerful CPU that ensures images are quickly and smoothly processed. It also assists in boosting AF performance through a newly developed focusing algorithm. This allows the X100V to operate as low as -5EV, which allows for focus to be achieved easily and quickly in low-light conditions, so images can be made during any moment</p>
+  </div>
+
+
+</div><br><br>
+
+<div class="row">
+  <div class="col-sm-4" >
+    <h1 style="color: white;text-align: center;">Great low-light performance</h1>
+    <p style="color: white; text-align:justify;">The quad-core X-Processor 4 is the X100V's powerful CPU that ensures images are quickly and smoothly processed. It also assists in boosting AF performance through a newly developed focusing algorithm. This allows the X100V to operate as low as -5EV, which allows for focus to be achieved easily and quickly in low-light conditions, so images can be made during any moment</p>
+  </div>
+  <div class="col-sm-8">
+    <img src="100v – 18.jpg" style="width: 50%;" alt="" class="src">
+    </div>
+
+</div><br><br>
+
+
+<div class="row">
+  <div class="col-sm-8">
+    <img src="videolense.gif" style="width:50%;margin-left: 50%;" alt="" class="src1">
+    </div>
+  <br><br>
+    <div class="col-sm-4" style="margin-top:150px ;">
+      <h1 style="color: white;text-align: center;">Set the distance for faster AF speed</h1>
+      <p style="color: white; text-align:justify;">The Focus Limiter Function can be used to set the lens to a specific range of distances to allow for faster AF performance. This is particularly useful when the approximate distance to the subject is consistent and high-performance AF is needed.</p>
+    </div>
+  
+  
+  </div><br><br>
+  
+
+
+
+
+  <div class="row">
+    <div class="col-sm-4" >
+      <h1 style="color: white;text-align: center;">A Legacy in
+        Color Science</h1>
+      <p style="color: white; text-align:justify;">Fujifilm’s heritage in color science has given it legendary status among image-makers across the world. During its 85 years in the industry, Fujifilm has been responsible for some of the most iconic photographic films in history and this exceptional knowledge has been poured into its collection of 17 digital Film Simulations. This cutting-edge technology allows photographers to achieve stunning results straight out of camera.
+
+        Apply the look from classic flims, such as PROVIA, Velvia, Astia, ACROS and Eterna, which are loved around the world, or use the new Classic Negative to rekindle a new sense of creativity.</p>
+    </div>
+    <div class="col-sm-8">
+      <img src="100v – 19.jpg" style="width: 50%;" alt="" class="src">
+      </div>
+  
+  </div><br><br><br><br>
+
+</div>
+
+
+        
+<div class="bg6">
+  <div class="container">
+    <div class="col-sm-12"><br><br><br>
+      <h1 style="color: white;text-align: center;">Color Chrome Effect / Color Chrome Blue</h1>
+      <p style="color: white;text-align: center;">Color Chrome Effect adds additiional contrast and saturation to colors in an image, while Color Chrome Blue applies the same effects, but to just the color blue.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="100v – 21.jpg"  style="width: 100%;" alt="" class="src">
+      </div>
+
+      
+        <div class="col-sm-6">
+          <img src="100v – 22.jpg"  style="width: 100%;" alt="" class="src">
+        </div>
+  
+
+
+    </div>
+
+    <div class="col-sm-12"><br><br><br>
+      <h1 style="color: white;text-align: center;">Grain effect</h1>
+      <p style="color: white;text-align: center;">Natural film grain can be added to any image as an easy way of creating a “film-look” in -camera. This can be combined with the diverse range of Film Simulations to add texture individuality to any image.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="100v – 23.jpg"  style="width: 100%;" alt="" class="src">
+      </div>
+
+      
+        <div class="col-sm-6">
+          <img src="100v – 24.jpg"  style="width: 100%;" alt="" class="src">
+        </div>
+  
+
+
+    </div>
+
+
+    
+    <div class="col-sm-12"><br><br><br>
+      <h1 style="color: white;text-align: center;">Multiple exposure</h1>
+      <p style="color: white;text-align: center;">Layer up to 9 images in Additive, Average, Comparative Bright or Comparative Dark modes to combine multiple perspectives or different points in time. Various settings, including Film Simulations, can be applied to each exposure to produce a unique creative expression completely in-camera.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="100v – 25.jpg"  style="width: 100%;" alt="" class="src">
+      </div>
+
+      </div>
+
+
+
+
+  </div>
+</div>
+
+<!--end-->
+  <div class="col-sm-12">
+     <img src="100v – 26.jpg" width="100%" alt="" class="src">
+  </div>
+
+
+
+
+
+<div class="bg7">
+  <div class="container"><br><br><br><br>
+    <div class="row">
+      <div class="col-sm-6">
+        <h1 style="color: white;text-align:justify;"><span style="color: red;">Battery</span>Life</h1>
+        <p style="color: white;text-align:justify;">Layer up to 9 images in Additive, Average, Comparative Bright or Comparative Dark modes to combine multiple perspectives or different points in time. Various settings, including Film Simulations, can be applied to each exposure to produce a unique creative expression completely in-camera.</p>
+        <table class="table">
+    
+          <tbody><hr>
+            <tr>
+              <td style="color: white;"><b>Battery life
+                for still images</b></td>
+              <td style="color: white;">Approx. 350 frames (When using EVF, Normal mode)
+                Approx. 420 frames (When using OVF, Normal mode)</td>
+            </tr>
+            <tr>
+              <td style="color:white ;"><b>Continuance battery
+                life of movie capture</b></td>
+              <td style="color: white;">[4K] Approx. 55min. (29.97p)
+                [Full HD] Approx. 75min. (59.94p)</td>
+            
+            </tr>
+          
+          </tbody>
+        </table>
+      </div>
+<div class="col-sm-6">
+  <h1 style="color: white;text-align:justify;"><span style="color: red;">Terminals</span></h1>
+  <p style="color: white;text-align:justify;">The camera is equipped with an USB Type-C port and handles everything from charging to data transfer.</p>
+  <img src="100v – 28.jpg"  style="width: 100%;"  alt="" class="src">
+
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+<!--end-->
+
+<div class="bg8">
+
+
+<!--model pdf-->
+<div class="container">
+ 
+  <div class="row">
+  <div class="col-sm-12">
+   <table class="table table-hover">
+    
+     <tbody><hr>
+       <tr>
+         <td><b>Model name</b></td>
+         <td>	FUJIFILM X-H2S</td>
+       </tr>
+       <tr>
+        <td><b>News release</b></td>
+        <td> <a href="https://www.fujifilm.com/jp/en/news/hq/2731?_ga=2.61077608.53376750.1657273923-373692711.1652705418">view pdf</a ></td>
+      
+      </tr>
+       <tr>
+         <td><b>Declaration of conformity</b></td>
+         <td> <a href="https://dl.fujifilm-x.com/global/products/cameras/x100v/pdf/x100v_doc-smzk.pdf?_ga=2.61077608.53376750.1657273923-373692711.1652705418">view pdf</a>        </td>
+       
+       </tr>
+     
+     </tbody>
+   </table>
+ </div>
+ 
+ </div>
+ </div>
+
+<br><br><br><br>
+
+
+ <div class="container">
+ 
+  <div class="row">
+  <div class="col-sm-12">
+   <table class="table table-hover">
+    
+     <tbody><hr>
+       <tr>
+       <td> 06.20.2022<br> <a href=""><b>GFX100S Firmware Update Ver.2.12</b></a></td>
+         
+       </tr>
+       <tr>
+        <td> 03.20.2022<br><a href=""><b>GFX100S Firmware Update Ver.2.11</b></a></td>
+        
+      </tr>
+      <tr>
+        <td> 12.02.2022<br><a href=""><b>[2/03/22 Update]Notice of Firmare availability due to the specification change of our digital cameras</b></a></td>
+        
+      </tr>
+      <tr>
+        <td> 11.10.2021<br><a href=""><b>GFX100S Firmware Update Ver.2.11</b></a></td>
+        
+      </tr>
+      <tr>
+        <td> 9.11.2021<br><a href=""><b>GFX100S Firmware Update Ver.2.00</b></a></td>
+        
+      </tr>
+      
+     
+     </tbody>
+   </table>
+ </div>
+ 
+ </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <br><br><br><br>
+<!--cards-->
+
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card2 " style="width:100%; ">
+        <a href="#"><img src="part1100s – 52.jpg"  style="width:50%; " alt=""></a> 
+   </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2 " style="width:100%; ">
+        <a href="#"><img src="part1100s – 53.jpg"  style="width:50%; " alt=""></a> 
+   </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2 " style="width:100%; ">
+        <a href="#"><img src="part1100s – 52.jpg"  style="width:50%; " alt=""></a> 
+   </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2 " style="width:100%;color: red; ">
+        <a href="#"><img src="part1100s – 53.jpg"  style="width:50%; " alt=""></a> 
+   </div>
+    </div>
+   
+
+
+    </div>
+ </div>
+
+<!--end-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--owl-->
+
+<section>
+  <div class="container-fluid my-5" >
+
+     
+      <div class="row mt-5">
+          
+          <div class="owl-carousel owl-theme">
+            
+              <div class="item mb-4">
+
+                  <div class="card border-0 shadow" style="background-color: transparent;">
+                      <img src="part1100s – 56.jpg" alt="movie1" class="card-img-top" >
+                     <h2>X-H2S</h2>
+
+
+                  </div>
+              </div>
+            
+              <!--items end-->
+              
+              <div class="item mb-4">
+
+                  <div class="card border-0 shadow" style="background-color: transparent;">
+                      <img src="part1100s – 57.jpg" alt="movie1" class="card-img-top" >
+                      <h2>X100v</h2>
+
+
+
+                  </div>
+              </div>
+            
+              <!--items end-->
+              
+              <div class="item mb-4">
+
+                  <div class="card border-0 shadow" style="background-color: transparent;">
+                      <img src="part1100s – 58.jpg" alt="movie1" class="card-img-top" >
+                      <h3 style="font-size: 24.27px;">XF 150-600mm F5.6-8 RLM OLS WE</h3>
+
+                  </div>
+              </div>
+            
+              <!--items end-->
+              
+              <div class="item mb-4">
+
+                  <div class="card border-0 shadow" style="background-color: transparent;">
+                      <img src="part1100s – 59.jpg" alt="movie1" class="card-img-top" >
+                      <h2>GFX50s</h2>
+
+
+                  </div>
+              </div>
+            
+              <!--items end-->
+              <div class="item mb-4">
+
+                <div class="card border-0 shadow" style="background-color: transparent;">
+                    <img src="part1100s – 60.jpg" alt="movie1" class="card-img-top" >
+                    <h2>GFX50s II</h2>
+
+
+
+                </div>
+            </div>
+             
+            
+              <!--items end-->
+             
+              
+              <div class="item mb-4">
+
+                <div class="card border-0 shadow" style="background-color: transparent;">
+                    <img src="part1100s – 61.jpg" alt="movie1" class="card-img-top" >
+                    <h2>GFX50S</h2>
+
+
+
+                </div>
+            </div>
+
+
+ <!--items end-->
+
+
+   
+ <div class="item mb-4">
+
+  <div class="card border-0 shadow" style="background-color: transparent;">
+      <img src="part1100s – 62.jpg" alt="movie1" class="card-img-top" >
+      <h2>X-H1</h2>
+
+
+
+  </div>
+</div>
+
+
+
+  <!--items end-->
+
+
+  
+  <div class="item mb-4">
+
+    <div class="card border-0 shadow" style="background-color: transparent;">
+        <img src="part1100s – 63.jpg" alt="movie1" class="card-img-top" >
+       
+        <h2>XF10</h2>  
+    </div>
+  </div>
+
+
+    <!--items end-->
+            
+          </div>
+
+      </div>
+  </div>
+</section>
+
+
+
+
+</div>
+<!--end-->
+
+
+
+<!-- Footer -->
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="cta-text">
+              <h4>Find us</h4>
+              <span>1010 Avenue, sw 54321, chandigarh</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-phone"></i>
+            <div class="cta-text">
+              <h4>Call us</h4>
+              <span>9876543210 0</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="far fa-envelope-open"></i>
+            <div class="cta-text">
+              <h4>Mail us</h4>
+              <span>mail@info.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a href="index.html"><img src="Fujifilm.png" class="img-fluid" alt="logo"></a>
+            </div>
+           
+            <div class="footer-social-icon">
+              <span>Follow us</span>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></i></a>
+              <a href="#"><i class="bi bi-google"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Useful Links</h3>
+            </div>
+            <ul>
+              <li><a href="fujifilm page1.html">HOME</a></li>
+              <li><a href="camerapage5.html">PRODUCT</a></li>
+              <li><a href="dowmload.html">SUPPORT</a></li>
+              <li><a href="gallery.html">X-PHOTOGRAPHER</a></li>
+              <li><a href="eventspage.html">EVENTS</a></li>
+              <li><a href="newsspage.html">NEWS</a></li>
+              <li><a href="promption.html">PROMOTIONS</a></li>
+              <li><a href="shop.html">SHOP</a></li>
+              <li><a href="#">CONTACT US</a></li>
+             
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Subscribe</h3>
+            </div>
+            <div class="footer-text mb-25">
+              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+            </div>
+            <div class="subscribe-form">
+              <form action="#">
+                <input type="email" placeholder="Email Address">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-to-top"><i class="bi bi-chevron-up"></i></button>
+
+<!--end-->
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+
+  const scrollBtn = document.querySelector(".scroll-to-top");
+  
+  const refreshButtonVisibility = () => {
+    if (document.documentElement.scrollTop <= 150) {
+      scrollBtn.style.display = "none";
+    } else {
+      scrollBtn.style.display = "block";
+    }
+  };
+  refreshButtonVisibility();
+  
+  scrollBtn.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+  
+  document.addEventListener("scroll", (e) => {
+    refreshButtonVisibility();
+  });
+  
+  
+  
+  
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<!--model-->
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+
+
+
+<!--jquery--->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--owl carosual cdn-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--i it owal carousal-->
+
+
+<script>
+  var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+    
+    
+    
+});
+
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+        <!-- Optional JavaScript; choose one of the two! -->
+    
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        -->
+      </body>
+    </html>
+    

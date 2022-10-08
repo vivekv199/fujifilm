@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FAQ ACCORDION </title>
+    <!-- fontawasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- css -->
+   <link rel="stylesheet" href="style.css">
+
+   <style>
+    body{
+      background-color: black;
+    }
+    
+.title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-decoration: underline 4px;
+}
+
+
+.questions-container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question{
+    border-bottom: 1px solid #fff;
+}
+.question button{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    color:white;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: #fff;
+}
+
+/*add this class when click*/
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
+   </style>
+</head>
+<body>
+
+<section>
+  <div class="comtainer">
+    <div class="col-sm-12">
+       <a href="fujifilm page1.html"><img src="Fujifilm.png"  style="width:10%;" alt="" class="src"></a> 
+    </div>
+  </div>
+<br><br><br><br><br>
+    <div class="questions-container">
+        <div class="question">
+            <button>
+                <span>
+                    Which memory cards can be used?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>For a list of supported memory cards visit ...</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>White or black bands displayed on the LCD monitor <br>of the digital camera</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>With CCD-based digital cameras noise may ap...</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>Why is the frame No.1000 (2000, 3000 to 9000) missing?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>The frame No.1000 (2000 3000 to 9000) is un...</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>What is the Privacy setting of YouTube movies?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>You can limit the viewers of a movie on You...</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>What is the version number of Exif?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>
+                Exif Ver.2.2 is supportedShooting informati...</p>
+        </div>
+
+
+        <div class="question">
+            <button>
+                <span>What models have the function of "Natural Light & Flash"?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>This mode is to shoots 2 images continuousl...
+            </p>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- external js-->
+
+
+
+
+
+
+<script src="main.js"></script>
+<script>
+  const buttons = document.querySelectorAll('button');
+
+buttons.forEach( button =>{
+    button.addEventListener('click',()=>{
+        const faq = button.nextElementSibling;
+        const icon = button.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
+</script>
+</body>
+</html>
